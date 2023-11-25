@@ -36,14 +36,14 @@ export default function AppRickMorty() {
 
   return (
     <>
-      <h1>App RickMorty</h1>
+      <h1>Aplicativo RickMorty</h1>
 
        <section>
         <FormRickMorty adicionarPersonagem={ adicionarPersonagem }/>
       </section>
 
       <section>
-        <h3>Resultado da API</h3>
+        <h3>Resultado dos banners</h3>
         {loading && <div>Carregando...</div>}
         <ListaPersonagens 
             lista={lista} 
@@ -52,7 +52,7 @@ export default function AppRickMorty() {
             selecionaPersonagem={adicionarPersonagem}
             />
             <button onClick={() => setSelecionados(lista)}> Selecionar todos </button>
-            <button onClick={() => setSelecionados([])}> Limpar seelção </button>
+            <button onClick={() => setSelecionados([])}> Limpar seleção </button>
             <button onClick={() => setSelecionados([lista[0]])}> Selecionar o primeiro </button>
             <button onClick={() => setSelecionados([lista[1]])}> Selecionar o segundo </button>
       </section>
